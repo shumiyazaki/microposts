@@ -130,7 +130,7 @@ public function unfavorite($micropostId)
    
        public function favoritings()
     {
-    return $this->belongsToMany(Micropost::class, 'user_favorite', 'user_id', 'favorite_id')->withTimestamps();
+        return $this->belongsToMany(Micropost::class, 'user_favorite', 'user_id', 'favorite_id')->withTimestamps();
     }
 }
 
